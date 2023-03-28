@@ -20,15 +20,31 @@ namespace ConsoleUI
 
             var car1 = new Car()
             {
-                HasTrunk = true
+                HasTrunk = true,
+                Year = "2023",
+                Make = "Honda",
+                Model = "Accord"
             };
             var motorcycle1 = new Motorcycle()
             {
-                HasSideCart= true
+                HasSideCart= true,
+                Year = "2019",
+                Make = "Kawaski",
+                Model = "Ninja"
             };
-            Vehicle vehicle1 = new Car() { Make = "Ford" };
-            Vehicle vehicle2 = new Motorcycle() { Make = "Honda" };
-
+            Vehicle vehicle1 = new Car() {
+                HasTrunk = true,
+                Year = "2020",
+                Make = "Ford",
+                Model = "Focus"
+            };
+            Vehicle vehicle2 = new Motorcycle() {
+                HasSideCart= true,
+                Year = "2010",
+                Make = "Suzuki",
+                Model = "GSXR"
+            };
+             
 
             /*
              * Add the 4 vehicles to the list
