@@ -44,17 +44,30 @@ namespace ConsoleUI
                 Make = "Suzuki",
                 Model = "GSXR"
             };
-             
 
-            /*
-             * Add the 4 vehicles to the list
-             * Using a foreach loop iterate over each of the properties
-             */
+            vehicles.Add(car1);
+            vehicles.Add(motorcycle1);
+            vehicles.Add(vehicle1);
+           vehicles.Add(vehicle2);
+
+            foreach (var vehicle in vehicles)
+            {
+                Console.WriteLine($"Year: {vehicle.Year} " );
+                Console.WriteLine($"Make: {vehicle.Make} ");
+                Console.WriteLine($"Model: {vehicle.Model} ");
+                Console.WriteLine();
+                vehicle.DriveAbstract();
+                vehicle.DriveVirtual();
+                Console.WriteLine();
+
+            }
 
             // Call each of the drive methods for one car and one motorcycle
 
+
+
             #endregion            
-            Console.ReadLine();
+         
         }
     }
 }
